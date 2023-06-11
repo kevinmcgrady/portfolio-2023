@@ -15,7 +15,8 @@ export const ContactTab: React.FC = () => {
       <Card>
         <Typography variant='subTitle'>Email</Typography>
         <Typography>
-          Send me an email at <Link href={urls.email}>{urls.email}</Link>
+          Send me an email at{' '}
+          <Link href={'mailto:' + urls.email}>{urls.email}</Link>
         </Typography>
         <Typography variant='subTitle'>Socials</Typography>
         <div className={styles.iconContainer}>
