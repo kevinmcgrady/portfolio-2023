@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { HiBriefcase, HiCake, HiCalendar, HiLink } from 'react-icons/hi';
+import { HiCake, HiCalendar, HiLink } from 'react-icons/hi';
 
 import { Avatar } from '@/components/atoms/Avatar/Avatar.component';
 import { Container } from '@/components/layout/Container/Container.component';
@@ -11,6 +11,7 @@ import { AboutTab } from '@/components/organisms/AboutTab/AboutTab.component';
 import { ContactTab } from '@/components/organisms/ContactTab/ContactTab.component';
 import { ExperienceTab } from '@/components/organisms/ExperienceTab/ExperienceTab.component';
 import { ProjectsTab } from '@/components/organisms/ProjectsTab/ProjectsTab.component';
+import urls from '@/urls';
 
 export default function Home() {
   return (
@@ -25,8 +26,16 @@ export default function Home() {
             subTitle='Creates user focused web applications'
             description='Mid Level Developer. Full Stack Developer. Glasgow, Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿.'
             details={[
-              { text: 'Available', icon: HiBriefcase },
-              { text: 'GitHub', icon: HiLink },
+              {
+                text: 'LinkedIn',
+                icon: HiLink,
+                url: urls.linkedIn,
+              },
+              {
+                text: 'GitHub',
+                icon: HiLink,
+                url: urls.gitHub,
+              },
               { text: 'September 11th', icon: HiCake },
               { text: 'Joined Jan 2023', icon: HiCalendar },
             ]}

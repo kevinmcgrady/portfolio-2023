@@ -26,25 +26,25 @@ export const Card: React.FC<CardProps> = ({
     >
       <div className={styles.tagContainer} role='list'>
         {dates && (
-          <>
-            <Typography variant='tag' color='accent' isBold>
+          <div className={styles.tag}>
+            <Typography variant='tag' isBold>
               {dates}
             </Typography>
-            <Typography variant='tag'>•</Typography>
-          </>
+          </div>
         )}
         {location && (
-          <>
-            <Typography variant='tag' color='accent' isBold>
+          <div className={styles.tag}>
+            <Typography variant='tag' isBold>
               {location}
             </Typography>
-            <Typography variant='tag'>•</Typography>
-          </>
+          </div>
         )}
         {level && (
-          <Typography variant='tag' color='accent' isBold>
-            {level}
-          </Typography>
+          <div className={styles.tag}>
+            <Typography variant='tag' isBold>
+              {level}
+            </Typography>
+          </div>
         )}
       </div>
       {children}

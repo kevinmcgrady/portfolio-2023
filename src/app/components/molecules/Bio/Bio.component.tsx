@@ -3,11 +3,13 @@ import { JSXElementConstructor } from 'react';
 
 import { Typography } from '@/components/atoms/Typography/Typography.component';
 
+import { Link } from '../Link/Link.component';
 import styles from './Bio.module.scss';
 
 type Details = {
   text: string;
   icon: JSXElementConstructor<any>;
+  url?: string;
 };
 
 export type BioProps = {
@@ -32,7 +34,11 @@ export const Bio: React.FC<BioProps> = ({
         {details.map((detail) => (
           <div key={detail.text} className={styles.iconContainer}>
             <detail.icon className={styles.icon} role='img' />
-            <Typography color='secondary'>{detail.text}</Typography>
+            {detail.url ? (
+              <Link href={detail.url}>{detail.text}</Link>
+            ) : (
+              <Typography color='secondary'>{detail.text}</Typography>
+            )}
           </div>
         ))}
       </div>

@@ -14,16 +14,19 @@
 
 .tagContainer {
   display: flex;
-  gap: $large;
+  gap: $med;
   justify-content: flex-end;
   flex-wrap: wrap;
+
   @include for-phone-only {
     gap: $small;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
 .tag {
-  background-color: var(--secondary);
+  background-color: var(--accent);
   border-radius: $large;
-  padding: $small;
+  padding: $small $med;
 }

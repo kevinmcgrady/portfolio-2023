@@ -14,6 +14,11 @@ const props: BioProps = {
       text: 'details text',
       icon: HiCake,
     },
+    {
+      text: 'details text 2',
+      icon: HiCake,
+      url: 'http://www.google.com',
+    },
   ],
 };
 
@@ -32,4 +37,9 @@ test('displays content', () => {
 test('displays details', () => {
   render(<Bio {...props} />);
   expect(screen.getByText('details text')).toBeTruthy();
+});
+
+test('display link if url exists', () => {
+  render(<Bio {...props} />);
+  expect(screen.getByRole('link')).toHaveTextContent('details text 2');
 });
