@@ -1,0 +1,29 @@
+@import '@/styles/colors.scss';
+@import '@/styles/sizes.scss';
+@import '@/styles/mediaQuery.scss';
+
+.card {
+  background-color: var(--tertiary);
+  border-radius: $small;
+  padding: $large;
+}
+
+.gutter {
+  margin-bottom: $large;
+}
+
+.tagContainer {
+  display: flex;
+  gap: $large;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  @include for-phone-only {
+    gap: $small;
+  }
+}
+
+.tag {
+  background-color: var(--secondary);
+  border-radius: $large;
+  padding: $small;
+}

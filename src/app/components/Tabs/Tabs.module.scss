@@ -1,0 +1,39 @@
+@import '@/styles/colors.scss';
+@import '@/styles/sizes.scss';
+@import '@/styles/mediaQuery.scss';
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: $xlarge;
+  margin-bottom: $xlarge;
+  column-gap: $med;
+
+  @include for-phone-only {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: $large;
+}
+
+.tab {
+  padding: $med $small;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--tertiary);
+  }
+}
+
+.tabContainer {
+  margin-bottom: $xlarge;
+}
+
+.active {
+  background-color: var(--tertiary);
+}

@@ -1,0 +1,12 @@
+@import '@/styles/sizes.scss';
+
+.container {
+  width: 100%;
+  max-width: 724px;
+  margin: 0 auto;
+}
+
+.isNarrow {
+  max-width: 624px;
+  padding: 0 $med;
+}

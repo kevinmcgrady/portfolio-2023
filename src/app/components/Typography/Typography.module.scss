@@ -1,0 +1,38 @@
+@import '@/styles/colors.scss';
+@import '@/styles/sizes.scss';
+
+.body {
+  font-size: $font-default;
+  margin-bottom: $small;
+  line-height: 1.5;
+}
+
+.title {
+  font-size: $font-title;
+  margin-bottom: $med;
+}
+
+.subTitle {
+  font-size: $font-subTitle;
+  margin: $med 0;
+}
+
+.tag {
+  font-size: $font-tag;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.isBold {
+  font-weight: 700;
+}

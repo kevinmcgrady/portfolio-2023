@@ -1,0 +1,30 @@
+@import '@/styles/colors.scss';
+
+:root {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --tertiary: #{$tertiary};
+  --accent: #{$accent};
+  --background: #{$dark-background};
+}
+
+[data-theme='light'] {
+  --primary: #{$tertiary};
+  --secondary: #{$secondary};
+  --tertiary: #{$light-gray};
+  --accent: #{$light-accent};
+  --background: #{$light-background};
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  transition: all ease-in-out 300ms;
+  background: var(--background);
+}

@@ -1,0 +1,12 @@
+@import '@/styles/colors.scss';
+@import '@/styles/sizes.scss';
+
+.link {
+  color: var(--accent);
+  text-decoration: underline;
+  margin-bottom: $small;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

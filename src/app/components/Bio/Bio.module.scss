@@ -1,0 +1,29 @@
+@import '@/styles/colors.scss';
+@import '@/styles/sizes.scss';
+@import '@/styles/mediaQuery.scss';
+
+.grid {
+  display: flex;
+  column-gap: $large;
+
+  @include for-phone-only {
+    flex-direction: column;
+  }
+}
+
+.bio {
+  margin-top: $med;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: var(--secondary);
+  margin-bottom: $small;
+  margin-right: $small;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}

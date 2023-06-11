@@ -1,0 +1,21 @@
+@import '@/styles/colors.scss';
+@import '@/styles/sizes.scss';
+@import '@/styles/mediaQuery.scss';
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+
+  @include for-phone-only {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: $small;
+  margin-bottom: $small;
+  color: var(--secondary);
+}

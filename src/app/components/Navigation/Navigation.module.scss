@@ -1,0 +1,32 @@
+@import '@/styles/colors.scss';
+@import '@/styles/sizes.scss';
+
+.nav {
+  padding: 1rem;
+  backdrop-filter: blur(3px);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+}
+
+.iconContainer {
+  padding: $small;
+  cursor: pointer;
+  border-radius: $small;
+
+  &:hover {
+    background-color: var(--tertiary);
+  }
+}
