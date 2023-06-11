@@ -1,9 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { HiMoon } from 'react-icons/hi';
-
-import { Typography } from '@/components/atoms/Typography/Typography.component';
+import { HiMoon, HiSun } from 'react-icons/hi';
 
 import styles from './Navigation.module.scss';
 
@@ -21,13 +19,17 @@ export const Navigation: React.FC = () => {
   return (
     <nav className={styles.nav} role='navigation'>
       <div className={styles.flex}>
-        <Typography>K</Typography>
+        <div></div>
         <div
           role='button'
           className={styles.iconContainer}
           onClick={() => toggleTheme(theme === 'light' ? 'dark' : 'light')}
         >
-          <HiMoon className={styles.icon} role='img' />
+          {theme === 'dark' ? (
+            <HiMoon className={styles.icon} role='img' />
+          ) : (
+            <HiSun className={styles.icon} role='img' />
+          )}
         </div>
       </div>
     </nav>
