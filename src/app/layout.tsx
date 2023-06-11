@@ -1,5 +1,6 @@
 import './globals.scss';
 
+import { Analytics } from '@vercel/analytics/react';
 import { Roboto } from 'next/font/google';
 
 const inter = Roboto({
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang='en' data-theme='dark'>
       <body className={inter.className}>{children}</body>
+      <Analytics />
     </html>
   );
 }
