@@ -20,8 +20,11 @@ export const Card: React.FC<CardProps> = ({
   dates,
 }) => {
   return (
-    <div className={cn(styles.card, gutterBottom && styles.gutter)}>
-      <div className={styles.tagContainer}>
+    <div
+      className={cn(styles.card, gutterBottom && styles.gutter)}
+      role='contentinfo'
+    >
+      <div className={styles.tagContainer} role='list'>
         {dates && (
           <>
             <Typography variant='tag' color='accent' isBold>

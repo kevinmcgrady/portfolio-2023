@@ -11,7 +11,8 @@ type Tab = {
   title: string;
   element: JSX.Element;
 };
-type TabsProps = {
+
+export type TabsProps = {
   tabs: Tab[];
 };
 
@@ -24,7 +25,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
 
   return (
     <div>
-      <div className={styles.tabs}>
+      <div className={styles.tabs} role='group'>
         {tabs.map((tab) => {
           const activeTab = tab.title === selectedTab;
           return (
@@ -40,7 +41,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
           );
         })}
       </div>
-      <div className={styles.tabContainer}>
+      <div className={styles.tabContainer} role='main'>
         {tabs
           .filter((tab) => tab.title === selectedTab)
           .map((tab) => tab.element)}

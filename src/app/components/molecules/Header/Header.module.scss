@@ -1,11 +1,11 @@
 .header {
   height: 242px;
-  background-image: url('../../../../public/images/hero.svg');
+  background-image: url('../../../../../public/images/hero.svg');
   background-size: cover;
 }
 
 [data-theme='light'] {
   .header {
-    background-image: url('../../../../public/images/light-hero.svg');
+    background-image: url('../../../../../public/images/light-hero.svg');
   }
 }

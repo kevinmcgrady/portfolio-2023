@@ -10,7 +10,7 @@ type Details = {
   icon: JSXElementConstructor<any>;
 };
 
-type BioProps = {
+export type BioProps = {
   title: string;
   description: string;
   subTitle: string;
@@ -21,17 +21,17 @@ export const Bio: React.FC<BioProps> = ({
   title,
   description,
   subTitle,
-  details = [],
+  details,
 }) => {
   return (
-    <div>
+    <div role='article'>
       <Typography variant='title'>{title}</Typography>
       <Typography>{subTitle}</Typography>
       <Typography>{description}</Typography>
       <div className={cn(styles.grid, styles.bio)}>
         {details.map((detail) => (
           <div key={detail.text} className={styles.iconContainer}>
-            <detail.icon className={styles.icon} />
+            <detail.icon className={styles.icon} role='img' />
             <Typography color='secondary'>{detail.text}</Typography>
           </div>
         ))}

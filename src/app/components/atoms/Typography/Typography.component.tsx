@@ -41,6 +41,8 @@ export const Typography: React.FC<TypographyProps> = ({
     case 'title':
       return (
         <h1
+          role='heading'
+          aria-level={1}
           onClick={onClick}
           className={cn(
             styles.title,
@@ -55,6 +57,8 @@ export const Typography: React.FC<TypographyProps> = ({
     case 'subTitle':
       return (
         <h2
+          role='heading'
+          aria-level={2}
           onClick={onClick}
           className={cn(
             styles.subTitle,

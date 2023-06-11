@@ -19,14 +19,15 @@ export const Navigation: React.FC = () => {
   };
 
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.nav} role='navigation'>
       <div className={styles.flex}>
         <Typography>K</Typography>
         <div
+          role='button'
           className={styles.iconContainer}
           onClick={() => toggleTheme(theme === 'light' ? 'dark' : 'light')}
         >
-          <HiMoon className={styles.icon} />
+          <HiMoon className={styles.icon} role='img' />
         </div>
       </div>
     </nav>

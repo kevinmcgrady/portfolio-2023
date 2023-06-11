@@ -12,7 +12,10 @@ export const Container: React.FC<ContainerProps> = ({
   isNarrow = false,
 }) => {
   return (
-    <div className={cn(styles.container, isNarrow && styles.isNarrow)}>
+    <div
+      className={cn(styles.container, isNarrow && styles.isNarrow)}
+      role='main'
+    >
       {children}
     </div>
   );
