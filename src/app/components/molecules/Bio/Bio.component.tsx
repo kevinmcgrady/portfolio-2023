@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import { JSXElementConstructor } from 'react';
 
-import { Typography } from '@/components/Typography/Typography.component';
+import { Typography } from '@/components/atoms/Typography/Typography.component';
 
 import styles from './Bio.module.scss';
 

@@ -1,6 +1,6 @@
 import cn from 'classnames';
 
-import { Typography } from '@/components/Typography/Typography.component';
+import { Typography } from '@/components/atoms/Typography/Typography.component';
 
 import styles from './Card.module.scss';
 

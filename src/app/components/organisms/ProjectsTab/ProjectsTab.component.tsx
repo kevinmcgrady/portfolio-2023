@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 
-import { Card } from '@/components/Card/Card.component';
-import { Typography } from '@/components/Typography/Typography.component';
+import { Typography } from '@/components/atoms/Typography/Typography.component';
+import { Card } from '@/components/molecules/Card/Card.component';
 
 export const ProjectsTab: React.FC = () => {
   return (

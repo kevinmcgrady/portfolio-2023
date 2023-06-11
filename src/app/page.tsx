@@ -1,16 +1,16 @@
 import { Fragment } from 'react';
-import { HiBriefcase, HiCake, HiCalendar,HiLink } from 'react-icons/hi';
+import { HiBriefcase, HiCake, HiCalendar, HiLink } from 'react-icons/hi';
 
-import { AboutTab } from '@/components/AboutTab/AboutTab.component';
-import { Avatar } from '@/components/Avatar/Avatar.component';
-import { Bio } from '@/components/Bio/Bio.component';
-import { ContactTab } from '@/components/ContactTab/ContactTab.component';
-import { Container } from '@/components/Container/Container.component';
-import { ExperienceTab } from '@/components/ExperienceTab/ExperienceTab.component';
-import { Header } from '@/components/Header/Header.component';
-import { Navigation } from '@/components/Navigation/Navigation.component';
-import { ProjectsTab } from '@/components/ProjectsTab/ProjectsTab.component';
-import { Tabs } from '@/components/Tabs/Tabs.component';
+import { Avatar } from '@/components/atoms/Avatar/Avatar.component';
+import { Container } from '@/components/layout/Container/Container.component';
+import { Bio } from '@/components/molecules/Bio/Bio.component';
+import { Header } from '@/components/molecules/Header/Header.component';
+import { Navigation } from '@/components/molecules/Navigation/Navigation.component';
+import { Tabs } from '@/components/molecules/Tabs/Tabs.component';
+import { AboutTab } from '@/components/organisms/AboutTab/AboutTab.component';
+import { ContactTab } from '@/components/organisms/ContactTab/ContactTab.component';
+import { ExperienceTab } from '@/components/organisms/ExperienceTab/ExperienceTab.component';
+import { ProjectsTab } from '@/components/organisms/ProjectsTab/ProjectsTab.component';
 
 export default function Home() {
   return (

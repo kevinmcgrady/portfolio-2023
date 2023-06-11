@@ -3,7 +3,7 @@
 import cn from 'classnames';
 import { useState } from 'react';
 
-import { Typography } from '@/components/Typography/Typography.component';
+import { Typography } from '@/components/atoms/Typography/Typography.component';
 
 import styles from './Tabs.module.scss';
 

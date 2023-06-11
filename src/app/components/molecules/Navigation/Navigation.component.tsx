@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { HiMoon } from 'react-icons/hi';
 
-import { Typography } from '@/components/Typography/Typography.component';
+import { Typography } from '@/components/atoms/Typography/Typography.component';
 
 import styles from './Navigation.module.scss';
 

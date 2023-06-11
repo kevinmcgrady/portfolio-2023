@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
-import { AiFillGithub,AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
-import { Card } from '@/components/Card/Card.component';
-import { Link } from '@/components/Link/Link.component';
-import { Typography } from '@/components/Typography/Typography.component';
+import { Typography } from '@/components/atoms/Typography/Typography.component';
+import { Card } from '@/components/molecules/Card/Card.component';
+import { Link } from '@/components/molecules/Link/Link.component';
 
 import styles from './ContactTab.module.scss';
 
