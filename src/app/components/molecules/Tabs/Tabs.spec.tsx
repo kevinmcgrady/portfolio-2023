@@ -1,8 +1,9 @@
-import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
-import { Tabs } from './Tabs.component';
-import { ContactTab } from '../../organisms/ContactTab/ContactTab.component';
+import React from 'react';
+
 import { AboutTab } from '../../organisms/AboutTab/AboutTab.component';
+import { ContactTab } from '../../organisms/ContactTab/ContactTab.component';
+import { Tabs } from './Tabs.component';
 import styles from './Tabs.module.scss';
 
 test('loads component', () => {

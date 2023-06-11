@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+
 import { Header } from './Header.component';
 import styles from './Header.module.scss';
 

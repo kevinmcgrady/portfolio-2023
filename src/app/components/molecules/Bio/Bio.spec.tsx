@@ -1,8 +1,9 @@
 import '@testing-library/jest-dom';
 
 import { render, screen } from '@testing-library/react';
-import { Bio, BioProps } from './Bio.component';
 import { HiCake } from 'react-icons/hi';
+
+import { Bio, BioProps } from './Bio.component';
 
 const props: BioProps = {
   title: 'title',

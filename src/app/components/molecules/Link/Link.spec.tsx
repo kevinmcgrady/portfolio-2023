@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+
 import { Link } from './Link.component';
 import styles from './Link.module.scss';
 

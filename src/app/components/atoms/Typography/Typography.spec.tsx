@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom';
 
-import { render, screen, fireEvent } from '@testing-library/react';
+import { fireEvent,render, screen } from '@testing-library/react';
+
 import { Typography } from './Typography.component';
 import styles from './Typography.module.scss';
 
