@@ -4,6 +4,7 @@ import { Image } from '@/components/atoms/Image/Image.component';
 import { Typography } from '@/components/atoms/Typography/Typography.component';
 import { Card } from '@/components/molecules/Card/Card.component';
 import { Link } from '@/components/molecules/Link/Link.component';
+import urls from '@/urls';
 
 export const ProjectsTab: React.FC = () => {
   return (
@@ -20,9 +21,7 @@ export const ProjectsTab: React.FC = () => {
         </Typography>
         <Image src='/images/clipz.png' alt='clipz' width={528} height={300} />
         <Typography>
-          <Link href='https://shareme-steel.vercel.app/'>
-            https://shareme-steel.vercel.app/
-          </Link>
+          <Link href={urls.clipz}>{urls.clipz}</Link>
         </Typography>
         <Typography>
           Once logged in, users can easily upload their video clips from their
@@ -60,9 +59,7 @@ export const ProjectsTab: React.FC = () => {
           height={300}
         />
         <Typography>
-          <Link href='https://clips-silk-delta.vercel.app/'>
-            https://clips-silk-delta.vercel.app/
-          </Link>
+          <Link href={urls.shareme}>{urls.shareme}</Link>
         </Typography>
         <Typography>
           To enhance the discoverability of posts, Shareme provides robust
